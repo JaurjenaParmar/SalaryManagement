@@ -29,13 +29,15 @@ public class ViewConsultants extends javax.swing.JFrame {
      */
     public ViewConsultants() {
         initComponents();
+        System.out.println("Constructor called");
         createTable();
     }
 
     ViewConsultants(EmployeeClass edata) {
         initComponents();
         this.edata = edata;
-        edata.getId();
+        
+        System.out.println(edata.getId());
         edata.getName();
         edata.getEmail();
         edata.getPass();

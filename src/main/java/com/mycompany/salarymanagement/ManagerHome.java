@@ -93,13 +93,13 @@ public class ManagerHome extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         totalManagers2 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         totalConsultants2 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         totalEmployees1 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -212,14 +212,7 @@ public class ManagerHome extends javax.swing.JFrame {
         totalManagers2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalManagers2.setText("jLabel4");
 
-        jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\NetBeansProjects\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\manager.png")); // NOI18N
-        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel18MouseClicked(evt);
-            }
-        });
-
-        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\NetBeansProjects\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\businessman.png")); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\GitHub\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\manager.png")); // NOI18N
         jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel19MouseClicked(evt);
@@ -231,7 +224,7 @@ public class ManagerHome extends javax.swing.JFrame {
         totalConsultants2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalConsultants2.setText("jLabel4");
 
-        jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\NetBeansProjects\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\employee.png")); // NOI18N
+        jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\GitHub\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\businessman.png")); // NOI18N
         jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel21MouseClicked(evt);
@@ -243,18 +236,25 @@ public class ManagerHome extends javax.swing.JFrame {
         totalEmployees1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalEmployees1.setText("jLabel4");
 
+        jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\GitHub\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\employee.png")); // NOI18N
+        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel23MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(jLabel18)
-                .addGap(64, 64, 64)
+                .addGap(74, 74, 74)
                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
+                .addGap(46, 46, 46)
                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addGap(42, 42, 42)
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(85, Short.MAX_VALUE))
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel8Layout.createSequentialGroup()
@@ -276,11 +276,11 @@ public class ManagerHome extends javax.swing.JFrame {
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(43, 43, 43)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -391,24 +391,18 @@ public class ManagerHome extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_view2ActionPerformed
 
-    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
-        // TODO add your handling code here:
-        ViewManagers view = new ViewManagers(employeeData);
-        view.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jLabel18MouseClicked
-
     private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
         // TODO add your handling code here:
-        ViewConsultants view = new ViewConsultants(employeeData);
+        ViewManagers view = new ViewManagers(employeeData);
         view.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel19MouseClicked
 
     private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
         // TODO add your handling code here:
-        if (employeeData.getRole() != 3) {
-            ViewEmployees view = new ViewEmployees(employeeData);
+        System.out.println("View consultants mouse clicked");
+        if (employeeData.getRole() != 2) {
+            ViewConsultants view = new ViewConsultants(employeeData);
             view.setVisible(true);
             this.dispose();
         }
@@ -420,6 +414,15 @@ public class ManagerHome extends javax.swing.JFrame {
         manage.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_ManageActionPerformed
+
+    private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
+        // TODO add your handling code here:
+         if (employeeData.getRole() != 3) {
+            ViewEmployees view = new ViewEmployees(employeeData);
+            view.setVisible(true);
+            this.dispose();
+        }
+    }//GEN-LAST:event_jLabel23MouseClicked
 
     /**
      * @param args the command line arguments
@@ -462,11 +465,11 @@ public class ManagerHome extends javax.swing.JFrame {
     private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

@@ -47,7 +47,7 @@ public class SplashScreen extends javax.swing.JFrame {
         progress.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         progress.setText("0%");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\NetBeansProjects\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\salary.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\GitHub\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\salary.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);

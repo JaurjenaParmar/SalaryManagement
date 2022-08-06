@@ -172,14 +172,13 @@ public class ConsultantHome extends javax.swing.JFrame {
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel21.setIcon(new javax.swing.ImageIcon("C:\\Users\\parma\\Documents\\NetBeansProjects\\SalaryManagement\\src\\main\\java\\com\\mycompany\\salarymanagement\\icons\\employee.png")); // NOI18N
         jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel21MouseClicked(evt);
             }
         });
 
-        jLabel22.setText("Employees");
+        jLabel22.setText("Consultants");
 
         totalEmployees.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalEmployees.setText("jLabel4");

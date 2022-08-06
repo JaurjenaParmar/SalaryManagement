@@ -425,7 +425,7 @@ public class AddManager extends javax.swing.JFrame {
                     ps.setString(7, mail);
                     ps.setString(8, pass);
                     ps.execute();
-                    JOptionPane.showMessageDialog(null, "Manager '"+user+"' added successfully");
+                    JOptionPane.showMessageDialog(null, "Manager '" + user + "' added successfully");
                     ManagerHome home = new ManagerHome(edata);
                     home.setVisible(true);
                     this.dispose();
@@ -474,12 +474,22 @@ public class AddManager extends javax.swing.JFrame {
     private void homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeActionPerformed
         try {
             // TODO add your handling code here:
-            ManagerHome home = new ManagerHome(edata);
-            home.setVisible(true);
-            this.dispose();
-        } catch (ParseException ex) {
+            if (edata.getRole() == 1) {
+                ManagerHome home = new ManagerHome(edata);
+                home.setVisible(true);
+                this.dispose();
+            } else if (edata.getRole() == 0) {
+                AdminHome home = new AdminHome(edata);
+                home.setVisible(true);
+                this.dispose();
+            }else if(edata.getRole()==2){
+                ConsultantHome home=new ConsultantHome(edata);
+                home.setVisible(true);
+                this.dispose();
+            }
+            }catch (ParseException ex) {
             Logger.getLogger(AddManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
+        }catch (SQLException ex) {
             Logger.getLogger(AddManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_homeActionPerformed
